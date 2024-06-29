@@ -1,0 +1,52 @@
+/* RecentBookings.css */
+.recent-bookings-container {
+  background: #f0f4f8;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.recent-bookings-container h2 {
+  color: #333;
+  font-size: 24px;
+  margin-bottom: 20px;
+  position: relative;
+  display: inline-block;
+}
+
+.recent-bookings-container h2::after {
+  content: '';
+  width: 50px;
+  height: 4px;
+  background: #007bff;
+  display: block;
+  margin-top: 4px;
+  border-radius: 2px;
+}
+
+.recent-bookings-list {
+  list-style: none;
+  padding: 0;
+}
+
+.recent-bookings-item {
+  background: #fff;
+  margin-bottom: 15px;
+  padding: 15px;
+  border-radius: 8px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.recent-bookings-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.recent-bookings-item p {
+  margin: 5px 0;
+  color: #555;
+}
+
+.recent-bookings-item p strong {
+  color: #000;
+}

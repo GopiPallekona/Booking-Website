@@ -1,0 +1,164 @@
+.app {
+  background-color: #f0f0f0;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+}
+
+.title {
+  color: #333;
+  text-align: center;
+  animation: fadeIn 1s ease-in-out;
+}
+
+.animated-select {
+  animation: pulse 1s infinite;
+}
+
+.animated-button {
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  animation: bounce 2s infinite;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes pulse {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.05); }
+  100% { transform: scale(1); }
+}
+
+@keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(-30px);
+  }
+  60% {
+    transform: translateY(-15px);
+  }
+}
+
+/* Additional styling for components */
+.city-selector, .theater-list, .movie-list, .seat-selection, .summary {
+  background-color: #fff;
+  padding: 20px;
+  margin: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  animation: fadeIn 1s ease-in-out;
+}
+
+.theater-item, .movie-item, .seat {
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.theater-item:hover, .movie-item:hover, .seat:hover {
+  background-color: #e0e0e0;
+}
+.movie-item{
+  width: 200px;
+}
+
+.movie-item img {
+  width: 200px;
+  height: 250px;
+}
+.my-bookings{
+  padding: 20px;
+  background-color: #4CAF50;
+  color: #fff;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 15px;
+  border: #4CAF50;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: ease-in 0.3s;
+}
+.my-bookings:hover {
+  background-color: #3e8e41;
+  
+  
+}
+
+.seat.selected {
+  background-color: #4CAF50;
+  color: white;
+}
+
+.seat.booked {
+  background-color: #f44336;
+  color: white;
+  cursor: not-allowed;
+}
+
+.seat.available {
+  background-color: #f0f0f0;
+}
+
+.city-selector-container {
+  width: 80%;
+  margin: auto;
+}
+
+.city-selector {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.city-selector h2 {
+  font-size: 24px;
+  color: #333;
+}
+
+.animated-select {
+  width: 50%;
+  padding: 10px;
+  font-size: 16px;
+  margin-top: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+.movie-poster-slider {
+  margin-top: 20px;
+}
+
+.movie-poster-slider h2 {
+  text-align: center;
+  font-size: 24px;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.poster-slide {
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+}
+
+.poster-slide img {
+  width: 200px;
+  height: 300px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s;
+}
+
+.poster-slide img:hover {
+  transform: scale(1.05);
+}
+
